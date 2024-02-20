@@ -1,0 +1,82 @@
+@navColor: rgb(44, 133, 152);
+@bodyColor: rgb(224, 224, 224);
+@footerColor: rgb(0, 0, 0);
+
+@box1Color: red;
+@box2Color: blue;
+@box3Color: green;
+@box4Color: purple;
+
+@boxsize: 100px;
+
+.primaryTextStyle{
+    color: white;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    padding: 10px;
+
+}
+
+
+.bordered {
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: @bodyColor;
+
+}
+
+nav{
+    background-color: @navColor;
+    .primaryTextStyle();
+}
+
+.content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+}
+
+.box1{
+    background-color: @box1Color;
+    .bordered();
+    height: @boxsize;
+    width: @boxsize;
+}
+
+.box2{
+    background-color: @box2Color;
+    .bordered();
+    height: @boxsize + 100px;
+    width: @boxsize + 100px;
+}
+
+.box3{
+    background-color: @box3Color;
+    .bordered();
+    height: @boxsize + 150px;
+    width: @boxsize + 150px;
+}
+
+.box4{
+    background-color: @box4Color;
+    .bordered();
+    height: @boxsize - 50px;
+    width: @boxsize - 50px;
+}
+
+footer{
+    background-color: @footerColor;
+    .primaryTextStyle();
+}
